@@ -11,7 +11,7 @@ localtunnel will allow us to use a revalidation webhook that rebuilds our refres
 
 Let's start building:
 
-Start your dev server with `npm run dev`. In another terminal at project-level, run `let -p 3000`. This is going to expose our localhost so that we can test out, and work with, the revalidation hook we're about to create. Copy the url localtunnel spits out.
+Start your dev server with `npm run dev`. In another terminal at project-level, run `lt -p 3000`. This is going to expose our localhost so that we can test out, and work with, the revalidation hook we're about to create. Copy the url localtunnel spits out.
 
 Back in your Sanity project console, navigate to API
 ![Sanity console toolbar API tab](/public/images/API_Nav.png "Sanity console toolbar API tab")
@@ -19,7 +19,7 @@ Back in your Sanity project console, navigate to API
 Select the appropriate dataset from the dropdown menu (*(all datasets) will also work). Otherwise, match your webhook config to the following:
 ![Sanity revalidation webhook settings](/public/images/webhook_settings.png "Sanity revalidation webhook settings")
 
-Paste that localtunnel URL into the text field labeld <strong>URL</strong> and make sure to append it with `/api/revalidate`. We don't have any routes yet, but we will soon!
+Paste that localtunnel URL into the text field labeld <strong>URL</strong> and make sure to append it with `/api/revalidate`.
 
 We want the hook to trigger on Create, Update and Delete actions. To work, the webhook should also be enabled, so make sure that box is checked. And the HTTP method we'll be using is POST.
 
