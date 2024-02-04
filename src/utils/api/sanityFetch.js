@@ -7,6 +7,6 @@ export async function sanityFetch({
 }) {
   return sanityClient.fetch(query, qParams, {
     cache: process.env.NODE_ENV === "development" ? "no-cache" : "force-cache",
-    next: { tags: ['case_study', 'writing', 'info', 'deliverable', 'landing_blurb', 'skill', 'team_member'] },
+    next: { tags: [''] },
   });
 }

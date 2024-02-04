@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f4f4f4;
+  height: 70px;
+}
+
+.navTitle {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  left: 1rem;
+}
