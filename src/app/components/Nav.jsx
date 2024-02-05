@@ -18,9 +18,11 @@ export default function Nav() {
           }}
         />
       </Link>
-      <div className={styles.navTitle}>Next/Sanity On-Demand Reload <br/> and Image Component Template</div>
+      <div className={styles.navTitle}>
+        <Link href="/"><span className={styles.dTitle}>Next/Sanity On-Demand Reload <br /> and Image Component Template</span><span className={styles.mTitle}>Next/Sanity <br/>Template</span></Link>
+      </div>
       <Link href="/posts" className={styles.posts}>
-          Image Component at Work
+          <span className={styles.dPosts}>Image Component at Work</span><span className={styles.mPosts}>Example</span>
       </Link>
     </nav>
   )

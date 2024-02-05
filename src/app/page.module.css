@@ -1,8 +1,9 @@
 .wrapper {
   max-width: 100vw;
   height: 100%;
-  padding: 60px;
+  padding: 20px 20px;
 }
+
 
 .tableOfContents {
   border: 1px solid gray;
@@ -13,13 +14,32 @@
 .codeBlock {
   margin-left: 25px;
   background-color: rgb(230, 230, 230);
-  width: fit-content;
+  width: 100%;
   padding: 2px 4px;
   border-radius: 4px;
+  font-family: var(--font-code);
+  overflow: scroll;
 }
 
 .imageContainer {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+.indent {
+  margin-left: 25px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 100vw;
+    height: 100%;
+    padding: 20px 100px;
+  }
+
+  .codeBlock {
+    width: fit-content;
+    overflow: auto;
+  }
 }

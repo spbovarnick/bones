@@ -14,8 +14,8 @@ export default function ClientImg({ img, sizes, classes }) {
   return (
     <Image
       {...imageProps}
-      alt={img.alt}
-      sizes={sizes}
+      alt={img.alt ? img.alt : "Image"}
+      sizes={sizes ? sizes : "100vw"}
       quality={100}
       placeholder="blur"
       blurDataURL={img.asset.metadata.lqip}

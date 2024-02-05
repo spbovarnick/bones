@@ -1,7 +1,7 @@
 .nav {
   display: flex;
   position: relative;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 1rem 2rem;
   background-color: #f4f4f4;
@@ -9,14 +9,30 @@
 }
 
 .navTitle {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 800;
-  text-align: center;
+  text-align: left;
+}
+
+.navTitle a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.navTitle a:hover {
+  color: #3548c6;
 }
 
 .logo {
   position: absolute;
   left: 1rem;
+  transition: all .3 ease;
+  display:none;
+}
+
+.logo:hover {
+  opacity: .7;
 }
 
 .posts {
@@ -30,4 +46,44 @@
 
 .posts:hover {
   color: #3548c6;
+}
+
+.dTitle {
+  display: none;
+}
+
+.dPosts {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    justify-content: center;
+  }
+  
+  .navTitle {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .dTitle {
+    display: block;
+  }
+
+  .mTitle {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .dPosts {
+    display: block;
+  }
+
+  .mPosts {
+    display: none;
+  } 
 }
