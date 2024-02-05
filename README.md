@@ -1,15 +1,28 @@
-<section>
+<style>
+  .imageContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tableOfContents {
+    border: 1px solid gray;
+    padding: 0 20px;
+    border-radius: 10px;
+  }
+</style>
+<section class="intro">
   <h1>Next/Sanity Project Template</h1>
   <hr></hr>
   <p>This repo is a project template for Next/Sanity projects. The two features that I find myself re-using project-to-project are the tag-based revalidation on the <code>api/revalidate</code> route and the <code>ClientImag.jsx</code>.</p>
   <p>Please plunder this resource (and share any issues). If you've never built a Next/Sanity project, follow the steps to get going.</p>
   <h3>End Result:</h3>
-  <div className={styles.imageContainer}> 
+  <div class="imageContainer"> 
     <img src="public/images/result.gif" />
   </div>
   <br/>
 </section>
-<section>
+<section class="tableOfContents">
   <h2>Table of Contents</h2>
   <ul>
     <li>
