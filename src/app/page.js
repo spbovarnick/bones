@@ -5,6 +5,7 @@ import title_and_id from "/public/images/id_and_title.png";
 import ltURL from "/public/images/lt_url.png";
 import apiNav from "/public/images/API_Nav.png";
 import webhookConfig from "/public/images/webhook_settings.png";
+import result from "/public/images/result.gif"
 
 export default function Home() {
   return (
@@ -14,6 +15,16 @@ export default function Home() {
         <hr></hr>
         <p>This repo is a project template for Next/Sanity projects. The two features that I find myself re-using project-to-project are the tag-based revalidation on the <code>api/revalidate</code> route and the <code>ClientImag.jsx</code>.</p>
         <p>Please plunder this resource (and share any issues). If you've never built a Next/Sanity project, follow the steps to get going.</p>
+        <h3>End Result:</h3>
+        <div className={styles.imageContainer}> 
+          <Image 
+            src={result}
+            sizes="100vw"
+            alt="Gif of the project in action."
+            style={{width: "60%", height: "auto"}}
+          />
+        </div>
+        <br/>
       </section>
       <section className={styles.tableOfContents}>
         <h2>Table of Contents</h2>
@@ -140,8 +151,13 @@ export default function Home() {
         <p>This projection passes us not only <code>alt</code>, which is a required, though not breaking property of Next's <code>Image</code> component, but all of the metadata associated with the asset. We need that metadata to pass to <code>useNextSanityImage</code>, which will produce the props we need to render our image!</p>
         <p>The third, optional argument, <code>imageBuilder: urlForImage</code>, is a handy way to transofrm images. Though it's not the case in this repo, image transformations are crucial when you are using the <code>hotspot</code> and <code>crop</code> options on your Sanity image schemas.</p>
       </section>
+      <hr/>
       <section id="dependencies">
-
+        <h2>Dependencies</h2>
+        <ul>
+          <li><a href="https://github.com/sanity-io/next-sanity" target="_blank">next-sanity</a></li>
+          <li><a href="https://github.com/lorenzodejong/next-sanity-image#readme" target="_blank" >next-sanity-image</a></li>
+        </ul>
       </section>
     </div>
   );
