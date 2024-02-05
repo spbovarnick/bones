@@ -10,14 +10,14 @@ Please plunder this resource (and share any issues). If you've never built a Nex
 
 ## Table of Contents
 
-- [Setup](sanity-setup)
-  - [Setting Up Sanity](sanity-setup)
-  - [Installing localtunnel](localtunnel)
-  - [Creating the Revalidation Webhook](webhook)
-- [Explanation](explanation)
-  - [On-Demand Revalidation](explanation)
-  - [ClientImg Component](clientImg)
-- [Dependencies](dependencies)
+- [Setup](#setting-up-sanity)
+  - [Setting Up Sanity](#setting-up-sanity)
+  - [Installing localtunnel](#installing-localtunnel)
+  - [Creating the Revalidation Webhook](#creating-the-revalidation-webhook)
+- [Explanation](#on-demand-revalidation)
+  - [On-Demand Revalidation](#on-demand-revalidation)
+  - [ClientImg Component](#clientimg-component)
+- [Dependencies](#dependencies)
 
 ## Setting Up Sanity
 
