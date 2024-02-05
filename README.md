@@ -1,14 +1,48 @@
 <section>
-    <h1>Next/Sanity Project Template</h1>
-    <hr></hr>
-    <p>This repo is a project template for Next/Sanity projects. The two features that I find myself re-using project-to-project are the tag-based revalidation on the <code>api/revalidate</code> route and the <code>ClientImag.jsx</code>.</p>
-    <p>Please plunder this resource (and share any issues). If you've never built a Next/Sanity project, follow the steps to get going.</p>
-    <h3>End Result:</h3>
-    <div className={styles.imageContainer}> 
-      <img src="public/images/result.gif" />
-    </div>
-    <br/>
-  </section>
+  <h1>Next/Sanity Project Template</h1>
+  <hr></hr>
+  <p>This repo is a project template for Next/Sanity projects. The two features that I find myself re-using project-to-project are the tag-based revalidation on the <code>api/revalidate</code> route and the <code>ClientImag.jsx</code>.</p>
+  <p>Please plunder this resource (and share any issues). If you've never built a Next/Sanity project, follow the steps to get going.</p>
+  <h3>End Result:</h3>
+  <div className={styles.imageContainer}> 
+    <img src="public/images/result.gif" />
+  </div>
+  <br/>
+</section>
+<section>
+  <h2>Table of Contents</h2>
+  <ul>
+    <li>
+      <Link href="#sanity-setup">Setup</Link>
+    </li>
+    <ul>
+      <li>
+        <Link href="#sanity-setup">Setting Up Sanity</Link>
+      </li>
+      <li>
+        <Link href="#localtunnel">Installing localtunnel</Link>
+      </li>
+      <li>
+        <Link href="webhook">Creating the Revalidation Webhook</Link>
+      </li>
+      <li><Link href="/posts">Taking It For A Spin</Link></li>
+    </ul>
+    <li>
+      <Link href="#explanation">Explanation</Link>
+      <ul>
+        <li>
+          <Link href="#explanation">On-Demand Revalidation</Link>
+        </li>
+        <li>
+          <Link href="#clientImg">ClientImg Component</Link>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <Link href="#dependencies">Dependencies</Link>
+    </li>
+  </ul>
+</section>
 
 Create a Sanity project at [https://www.sanity.io/](https://www.sanity.io/).
 Create a `.env` file and paste in the following:
